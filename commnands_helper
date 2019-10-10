@@ -1,0 +1,2 @@
+After makin a change in Dockerfile, run:
+    docker-compose build
