@@ -3,3 +3,10 @@ After makin a change in Dockerfile, run:
 
 Run tests and flake8:
     docker-compose run app sh -c "python manage.py test && flake8"
+
+Remove the container after running the command
+(keep the system cleaner doesn't fill up):
+    docker-compose run --rm
+
+Create a new app: (called 'user')
+    docker-compose run --rm app sh -c "python manage.py startapp user"
