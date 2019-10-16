@@ -29,3 +29,4 @@ class UserAdmin(BaseUserAdmin):
 admin.site.register(models.User, UserAdmin)
 # No need to specify the admin that we want to register with because it will use the default one
 admin.site.register(models.Tag)
+admin.site.register(models.Ingredient)
