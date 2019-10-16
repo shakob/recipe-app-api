@@ -3,11 +3,10 @@ from rest_framework.routers import DefaultRouter
 
 from recipe import views
 
-
 router = DefaultRouter()
 router.register('tags', views.TagViewSet)
 router.register('ingredients', views.IngredientViewSet)
-
+router.register('recipes', views.RecipeViewSet)
 # used in reverse function to identify url path
 app_name = 'recipe'
 
