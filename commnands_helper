@@ -1,6 +1,9 @@
 After makin a change in Dockerfile, run:
     docker-compose build
 
+Run docker:
+    docker-compose up
+
 Run tests and flake8:
     docker-compose run app sh -c "python manage.py test && flake8"
 
